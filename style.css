@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Spartan", sans-serif;
+    font-family: sans-serif;
 }
 
 html {
@@ -51,4 +51,54 @@ p {
 
 body {
     width: 100%;
+    background-image: linear-gradient(rgb(252, 220, 162), #c9a0dc);
+    background-repeat: no-repeat;
+}
+
+/* Header */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background: linear-gradient(#c9a0dc, rgb(252, 220, 162));
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#header .logo {
+    height: 100px;
+}
+
+#navbar a {
+    position: relative;
+    padding: 0 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+#navbar a:hover,
+#navbar a.active {
+    color: crimson;
+}
+
+#navbar a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: crimson;
+    bottom: -4px;
+    left: 30px;
+    position: absolute;
+    /* Set to absolute for proper positioning of underline */
+    transition: width 0.3s ease;
+}
+
+#navbar a:hover::after,
+#navbar a.active::after {
+    width: 25%;
+    /* Expands the width to 25% on hover/active */
 }
