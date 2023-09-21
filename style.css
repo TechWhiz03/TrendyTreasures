@@ -49,6 +49,18 @@ p {
     margin: 40px 0;
 }
 
+button.btn {
+    background-color: rgba(245, 222, 179, 0.908);
+    border-radius: 15px;
+    border: none;
+    margin: 16px;
+    padding: 15px;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
 body {
     width: 100%;
     background-image: linear-gradient(rgb(252, 220, 162), #c9a0dc);
@@ -203,7 +215,6 @@ h1 {
 }
 
 /* Featured Products */
-
 #product1 {
     text-align: center;
 }
@@ -278,4 +289,30 @@ h1 {
     position: absolute;
     bottom: 18px;
     right: 15px;
+}
+
+/* Banner 2 */
+#banner2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    background-image: url("./img/banner2.png");
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner2 h2 {
+    padding: 10px 0;
+}
+
+#banner2 h2 span {
+    color: crimson;
+}
+
+#banner2 button:hover {
+    color: wheat;
+    background-color: rgba(0, 0, 0, 0.797);
 }
