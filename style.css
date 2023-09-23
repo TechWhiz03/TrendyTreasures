@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Spartan";
 }
 
 html {
@@ -373,4 +373,46 @@ h1 {
 #banner3 .banner-box:hover button {
     background-color: wheat;
     color: #222;
+}
+
+/* Text Banner */
+#banner4 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+
+#banner4 .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("./img/banner/b3.jpeg");
+    width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: left;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#banner4 .banner-box2 {
+    background-image: url("./img/banner/b4.jpeg");
+    background-position: bottom;
+}
+
+#banner4 .banner-box3 {
+    background-image: url("./img/banner/b5.jpeg");
+}
+
+#banner4 h2 {
+    font: 900;
+    font-size: 22px;
+}
+
+#banner4 h3 {
+    font: 800;
+    font-size: 16px;
+    color: crimson;
 }
