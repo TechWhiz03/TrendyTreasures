@@ -61,6 +61,18 @@ button.btn {
     transition: 0.5s;
 }
 
+button.btn2 {
+    background-color: transparent;
+    color: whitesmoke;
+    border: 1px solid white;
+    margin: 16px;
+    padding: 11px 18px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
 body {
     width: 100%;
     background-image: linear-gradient(rgb(252, 220, 162), #c9a0dc);
@@ -299,6 +311,7 @@ h1 {
     align-items: center;
     /* text-align: center; */
     background-image: url("./img/banner2.png");
+    width: 100%;
     height: 40vh;
     background-size: cover;
     background-position: center;
@@ -315,4 +328,49 @@ h1 {
 #banner2 button:hover {
     color: wheat;
     background-color: rgba(0, 0, 0, 0.797);
+}
+
+/* Banner3 */
+#banner3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#banner3 .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("./img/banner/b1.jpg");
+    width: 600px;
+    height: 50vh;
+    background-size: cover;
+    background-position: left;
+    padding: 20px;
+}
+
+#banner3 .banner-box2 {
+    background-image: url("./img/banner/b2.jpeg");
+}
+
+#banner3 h4 {
+    font: 300 20px;
+    color: whitesmoke;
+}
+
+#banner3 h2 {
+    font: 800 28px;
+    color: rgb(255, 228, 228);
+}
+
+#banner3 span {
+    font: 500 15px;
+    color: whitesmoke;
+    padding: 12px 0;
+}
+
+#banner3 .banner-box:hover button {
+    background-color: wheat;
+    color: #222;
 }
