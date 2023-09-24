@@ -529,4 +529,8 @@ footer .copyright {
         font-size: 24px;
         padding-bottom: 14px;
     }
+
+    #cart {
+        display: none;
+    }
 }
