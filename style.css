@@ -108,6 +108,10 @@ body {
     transition: all 0.3s ease;
 }
 
+#navbar i {
+    font-size: 21px;
+}
+
 #navbar a:hover,
 #navbar a.active {
     color: crimson;
@@ -129,6 +133,13 @@ body {
 #navbar a.active::after {
     width: 25%;
     /* Expands the width to 25% on hover/active */
+}
+
+/* To hide the hamburger menu */
+#mobile,
+#close {
+    display: none;
+    align-items: center;
 }
 
 /* Home Page */
@@ -472,4 +483,50 @@ footer a:hover {
 footer .copyright {
     text-align: center;
     width: 100%;
+}
+
+/* Media Query for Responsive Design*/
+
+@media (max-width: 799px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-image: linear-gradient(#c9a0dcf3, rgba(253, 222, 162, 0.914));
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding-top: 30px;
+        padding-left: 10px;
+        transition: 0.45s;
+    }
+
+    #navbar.active {
+        right: 0;
+    }
+
+    #navbar a {
+        margin-bottom: 27px;
+    }
+
+    #mobile,
+    #close {
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i {
+        color: #222;
+        padding-left: 20px;
+        font-size: 24px;
+    }
+
+    #close i {
+        font-size: 24px;
+        padding-bottom: 14px;
+    }
 }
